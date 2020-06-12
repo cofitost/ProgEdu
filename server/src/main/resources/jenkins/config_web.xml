@@ -80,11 +80,8 @@
         <timeoutMinutes>15</timeoutMinutes>
       </strategy>
       <buildStep class="hudson.tasks.Shell">
-        <command>npm i
-npm run test
-npm run htmlhint
-npm run stylelint
-npm run eslint</command>
+        <command>npm link selenium-webdriver chai
+npm run test</command>
       </buildStep>
       <operationList>
         <hudson.plugins.build__timeout.operations.FailOperation />
